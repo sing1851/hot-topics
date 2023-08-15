@@ -1,0 +1,267 @@
+
+/* adobe analogous colors=
+Light Green #4dbc4d
+Green Grey #abb6ab
+Dark Green #073c08
+White #ffffff
+Black #000000 */
+
+
+body{font-family: 'Montserrat', sans-serif;
+margin: 0;
+box-sizing: border-box;}
+
+.wrapper{max-width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;}
+
+    .logo{width:9rem;
+    height: auto;
+display: flex;
+justify-items: center;
+margin: auto;
+margin-top: 1rem;}
+
+h4{display: flex;
+justify-content: center;
+margin: auto;}
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/*styling for navigation bar */
+
+.navigation-bar {
+    background-color: #4dbc4d;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:1rem ;
+    height: 3rem;
+}
+
+a{display:flex;
+justify-content: space-around;}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content:space-evenly;
+}
+
+.nav-list li {
+    margin-right: 20px;
+    display: flex;   
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+ul{display: flex;
+    justify-content: space-between;}
+
+.nav-list a{
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 0.5em;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    padding-left:4.5rem ;
+    padding-right:4.5rem ;
+    padding-top:0.25rem;
+    padding-bottom:0.25rem;
+
+    
+}
+
+.nav-list a:hover {
+    color: #073c08;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/* masthead styling */
+
+header img{width: 100%;
+height: auto;
+margin-bottom:2rem;}
+
+
+
+h1{position: absolute;
+    left: 3rem;
+    top: 14rem;
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* article styling */
+.article img{width: 100%;
+height: auto;
+display: flex;
+justify-content: center;
+margin: auto;
+border-radius: 1rem;
+border-style: solid;
+border-width: 0.5rem;
+border-color: #abb6ab;}
+
+article{display: flex;
+justify-content: center;
+margin: auto;}
+
+h2{font-family: 'Bevan', cursive;
+color: #073c08;
+display: flex;
+justify-content: center;
+margin: auto;}
+
+.article figcaption{display: flex;
+justify-content: center;
+margin: auto;}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* footer styling */
+footer img{width:3rem;
+height: auto;
+padding: 0.5rem;}
+
+li{list-style: none;
+display: flex;
+justify-content: center;
+flex-direction: row;}
+
+footer ul{list-style: none;
+    display: flex;
+    padding: 0%;
+    justify-content: space-between;
+    flex-direction: row;}
+
+footer{max-width: 80%;
+justify-content: center;
+margin: auto;
+border-radius: 1rem;
+border-style: none;
+border-width: 0.5rem;
+border-color: #abb6ab;
+margin-bottom: 3rem;}
+
+#footnote{margin-top: 1rem;}
+
+#footbrand{color: #073c08;
+display: flex;
+justify-content: center;
+text-align: center;
+margin: auto;
+margin-top:1.5rem;
+margin-bottom: 1rem;}
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+/* portfolio styling */
+
+.card{
+    display:flex;
+     margin:auto;
+     margin-bottom: 2rem;
+justify-content: center;
+flex-direction: column;}
+
+.card img{display: flex;
+justify-content: center;
+margin: auto;
+border-radius: 1rem;
+border-style: solid;
+border-width: 0.5rem;
+border-color: #abb6ab;}
+
+.card h4{ margin-top:0.5rem;}
+
+.container{display: flex;
+justify-content: center;
+flex-wrap: wrap;}
+
+#pageinfo{margin:2rem;
+text-align: center;
+display: flex;
+justify-content: center;}
+
+    
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Mobile view styles */
+
+
+@media screen and (max-width: 35rem) {
+    p{line-height: 1.2rem;}
+
+    .navigation-bar {
+        background-color: #4dbc4d;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top:1rem ;
+        height: 3rem;
+    }
+
+    .card img{width: 100%;
+    height: auto;}
+ }
+ 
+ /* Tablet view styles */
+ @media screen and (min-width: 35.06rem) and (max-width: 80rem) {
+    p{line-height: 1rem;}
+
+    .card img{width: 80%;
+        height: auto;}
+        .card{max-width: 50%;}
+ }
+ 
+ /* Desktop view styles */
+ @media screen and (min-width: 80.06rem) {
+    p{line-height: 1.25rem;
+        padding-left: 2rem;
+    }
+
+    .article img{width: 40%;
+        height: auto;
+        display: block;
+        float: left;
+        margin: 2rem;
+        margin-top: 0rem;
+        margin-left:0 ;
+        margin-bottom:1rem;
+        border-radius: 1rem;
+        border-style: solid;
+        border-width: 0.5rem;
+        border-color: #abb6ab;}
+
+        .article figcaption{display: none;}
+        .wrapper2{
+        display: flex;
+        justify-content: center;
+        margin: auto;}
+
+        footer{
+            justify-content: center;
+            margin: auto;border-style: none;
+            margin-bottom: 3rem;}
+
+            .card img{width: 100%;
+                height: auto;}
+
+                .card{max-width: 30%;}
+
+
+
+            
+
+ }
